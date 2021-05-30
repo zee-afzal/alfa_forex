@@ -333,29 +333,27 @@ header .navbar {
 }
 
 .navbar .navbar-toggler-icon {
-  background-image: url("/assets/icons/menu.png");
-  display: inline-block;
-  font-size: 12px;
+  background-image: none;
 }
 
 .navbar .navbar-toggler {
   border-color: #fff;
   background-color: #fff;
-  height: 40px;
+  height: 36px;
   outline: none;
-  border-radius: 5px;
+  border-radius: 0px;
   position: absolute;
   right: 30px;
   top: 20px;
 }
 
 .navbar .navbar-toggler-icon:after {
+  content: '\f0c9';
   color: #a4c639;
   font-size: 18px;
   line-height: 26px;
-  font-family: 'Flaticon';
+  font-family: 'FontAwesome';
 }
-
 
 
 /* Banner Style */
@@ -437,7 +435,7 @@ header .navbar {
 }
 
 .Modern-Slider .NextArrow:before {
-  background-image: url("/assets/icons/aright.png");
+  content: '\f105';
 }
 
 .Modern-Slider .PrevArrow {
@@ -456,7 +454,7 @@ header .navbar {
 }
 
 .Modern-Slider .PrevArrow:before {
-  background-image: url("/assets/icons/aleft.png");
+  content: '\f104';
 }
 
 ul.slick-dots {
