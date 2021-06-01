@@ -727,6 +727,13 @@ ul.slick-dots {
   font-size: 36px;
 }
 
+.pre_count-digit {
+  margin: 5px 0px;
+  color: #a4c639;
+  font-weight: 700;
+  font-size: 36px;
+}
+
 .count-title {
   font-size: 20px;
   font-weight: 600;

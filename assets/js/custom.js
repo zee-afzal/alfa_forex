@@ -123,6 +123,8 @@ jQuery( document ).ready(function( $ ) {
         }
 
         $(window).scroll(function(){
+          var suffix="+";
+          var prefix="$";
 
           if(visible($('.count-digit')))
             {
@@ -135,7 +137,17 @@ jQuery( document ).ready(function( $ ) {
             duration: 3000,
             easing: 'swing',
             step: function () {
-              $this.text(Math.ceil(this.Counter));
+              $this.text(Math.ceil(this.Counter) + suffix);
+            }
+          });
+        });
+        $('.pre_count-digit').each(function () {
+          var $this = $(this);
+          jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function () {
+              $this.text(prefix + Math.ceil(this.Counter));
             }
           });
         });
