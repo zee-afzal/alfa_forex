@@ -39,7 +39,7 @@ h6 {
 
 a.filled-button {
   background-color: #a4c639;
-  color: #fff;
+  color: #fff !important;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 700;
@@ -50,6 +50,7 @@ a.filled-button {
 }
 
 a.filled-button:hover {
+  color: #a4c639 !important;
   background-color: #fff;
   color: #a4c639;
 }
@@ -1419,8 +1420,12 @@ footer ul.menu-list li a:hover {
   border-radius: 4px;
   box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
-  background: #fff;
+  background: #f7f7f7;
   overflow: hidden;
+}
+
+.list-group-item {
+  background-color: #f7f7f7;
 }
 
 .card:hover,
