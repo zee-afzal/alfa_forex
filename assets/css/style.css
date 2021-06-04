@@ -1509,6 +1509,7 @@ footer ul.menu-list li a:hover {
 }
 
 .modal-container .modal-footer {
+  margin-top: 0;
   background-color: #eee;
   padding: 0.8rem;
   text-align: left
