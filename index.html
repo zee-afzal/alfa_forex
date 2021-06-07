@@ -179,9 +179,8 @@
             <img src="assets/images/fxgiants.png" class="card-img-top" width="200" height="80" alt="...">
             <div class="card-body">
               <h5 class="card-title">FX Giants</h5>
-              <p class="card-text">FXGiants is a trade name of Notesco Limited. Notesco Limited is registered in Bermuda
-                with registration number 51491 and registered address of 65 Court Street, 6th Floor, Hamilton HM 12,
-                Bermuda.</p>
+              <p class="card-text">Experience the luxury of having tight spreads and ultra-fast market execution,
+                allowing you to seamlessly implement your strategy to the fullest with FX Giants.</p>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Live spread: 1.0</li>
@@ -340,7 +339,7 @@
         </div>
         <div class="col-md-12">
           <div class="contact-form">
-            <form id="contact" action="" method="post">
+            <form id="contact" name="contact_form" action="contact.php" method="post">
               <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                   <fieldset>
@@ -367,11 +366,15 @@
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button type="submit" id="form-submit" class="border-button">Send Message</button>
+                    <button type="submit" name="Submit" value="Submit" id="form-submit" class="border-button">Send
+                      Message</button>
                   </fieldset>
                 </div>
               </div>
             </form>
+            <?php if(!empty($statusMsg)){ ?>
+            <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+            <?php } ?>
           </div>
         </div>
       </div>
@@ -410,8 +413,9 @@
         </div>
         <div class="col-md-6 footer-item">
           <h4>Alfa Forex</h4>
-          <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus
-            elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+          <p>We give educational information to help traders learn how to become successful traders by introducing them
+            to the world of Forex trading. We're also a trading community that helps each other out on our everyday
+            trading journey to get good returns.</p>
         </div>
         <div class="col item social social-item">
           <ul class="social-icons">
