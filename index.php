@@ -375,7 +375,7 @@
               </div>
             </form>
             <?php if(!isset($_GET['response'])){ ?>
-            <p class="statusMsg <?php echo $_GET['response'] == 0 ? 'sucess' : 'error' ?>">
+            <p class="statusMsg <?php echo $_GET['response'] == 0 ? 'success' : 'error' ?>">
             <?php if($_GET['response'] == 0){ echo "Success" }else { echo "Error"; } ?></p>
             <?php } ?>
           </div>
