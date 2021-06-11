@@ -3,7 +3,7 @@ ini_set("display_errors","On");
 error_reporting(E_ALL);
 $statusMsg = '';
 $msgClass = '';
-if($_POST){
+if($_POST['Submit']){
     // Get the submitted form data
     $email = $_POST['email'];
     $name = $_POST['name'];

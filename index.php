@@ -341,7 +341,7 @@
         </div>
         <div class="col-md-12">
           <div class="contact-form">
-            <form id="contact" name="contact_form" action="assets/php/contact.php" method="post">
+            <form id="contact" name="contact_form" action="contact.php" method="post">
               <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                   <fieldset>
