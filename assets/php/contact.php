@@ -1,7 +1,7 @@
 <?php
 $statusMsg = '';
 $msgClass = '';
-if(isset($_POST['Submit'])){
+if($_POST['Submit']){
     // Get the submitted form data
     $email = $_POST['email'];
     $name = $_POST['name'];
@@ -9,12 +9,12 @@ if(isset($_POST['Submit'])){
     $message = $_POST['message'];
     // Recipient email
     $toEmail = 'saadullah1800@gmail.com';
-    $emailSubject = 'Contact Request Submitted at Alfa Forex by '.$name;
-    $htmlContent = '<h2>Contact Request Submitted</h2>
-        <h4>Name</h4><p>'.$name.'</p>
-        <h4>Email</h4><p>'.$email.'</p>
-        <h4>Subject</h4><p>'.$subject.'</p>
-        <h4>Message</h4><p>'.$message.'</p>';
+    $emailSubject = 'Contact Request at Alfa Forex by '.$name;
+    $htmlContent = '<h2>Contact Request Submitted at Alfa Forex</h2>
+    <p><h4>Name: </h4>'.$name.'</p>
+    <p><h4>Email: </h4>'.$email.'</p>
+    <p><h4>Subject: </h4>'.$subject.'</p>
+    <p><h4>Message:: </h4>'.$message.'</p>';
     
     // Set content-type header for sending HTML email
     $headers = "MIME-Version: 1.0" . "\r\n";

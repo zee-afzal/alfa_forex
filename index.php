@@ -47,7 +47,7 @@
         <div class="col-md-8 col-xs-12">
           <ul class="left-info">
             <li><a><i class="fas fa-clock"></i>Mon-Fri 09:00-17:00</a></li>
-            <li><a href="tel:+971544967414"><i class="fas fa-phone-alt"></i>+971 54 496 7414</a></li>
+            <!-- <li><a href="tel:+971544967414"><i class="fas fa-phone-alt"></i>+971 54 496 7414</a></li> -->
           </ul>
         </div>
         <div class="col-md-4">
@@ -341,7 +341,7 @@
         </div>
         <div class="col-md-12">
           <div class="contact-form">
-            <form id="contact" name="contact_form" action="contact.php" method="post">
+            <form id="contact" name="contact_form" action="/assets/php/contact.php" method="post">
               <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                   <fieldset>
@@ -368,7 +368,7 @@
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button type="submit" name="Submit" value="Submit" id="form-submit" class="border-button">Send
+                    <button onclick="window.location.href = 'https://alfaforexofficial.com/';" type="submit" name="Submit" value="Submit" id="form-submit" class="border-button">Send
                       Message</button>
                   </fieldset>
                 </div>
