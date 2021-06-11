@@ -368,14 +368,15 @@
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button onclick="window.location.href = 'https://alfaforexofficial.com/';" type="submit" name="Submit" value="Submit" id="form-submit" class="border-button">Send
+                    <button type="submit" name="Submit" value="Submit" id="form-submit" class="border-button">Send
                       Message</button>
                   </fieldset>
                 </div>
               </div>
             </form>
-            <?php if(!empty($statusMsg)){ ?>
-            <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+            <?php if(!isset($_GET['response'])){ ?>
+            <p class="statusMsg <?php echo $_GET['response'] == 0 ? 'sucess' : 'error' ?>">
+            <?php if($_GET['response'] == 0){ echo "Success" }else { echo "Error"; } ?></p>
             <?php } ?>
           </div>
         </div>
