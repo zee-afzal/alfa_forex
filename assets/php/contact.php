@@ -27,10 +27,10 @@ if($_POST['Submit']){
     
     // Send email
     if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-        header('Location: https://alfaforexofficial.com/index.php?response=1');
+        header('Location: https://alfaforexofficial.com/index.php?response=0');
         die;
     }else{
-        header('Location: https://alfaforexofficial.com/index.php?response=0');
+        header('Location: https://alfaforexofficial.com/index.php?response=1');
         die;
     }
 }

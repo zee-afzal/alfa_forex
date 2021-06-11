@@ -341,7 +341,7 @@
         </div>
         <div class="col-md-12">
           <div class="contact-form">
-            <form id="contact" name="contact_form" action="/assets/php/contact.php" method="post">
+            <form id="contact" name="contact_form" action="assets/php/contact.php" method="post">
               <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                   <fieldset>
@@ -376,7 +376,7 @@
             </form>
             <?php if(!isset($_GET['response'])){ ?>
             <p class="statusMsg <?php echo $_GET['response'] == 0 ? 'success' : 'error' ?>">
-            <?php if($_GET['response'] == 0){ echo "Success" }else { echo "Error"; } ?></p>
+            <?php if($_GET['response'] == 0){ echo "Success"; }else { echo "Error"; } ?></p>
             <?php } ?>
           </div>
         </div>
