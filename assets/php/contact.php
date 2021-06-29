@@ -11,24 +11,22 @@ if($_POST['Submit']){
     $toEmail = 'umertaj123@gmail.com';
     $emailSubject = 'Contact Request at Alfa Forex by '.$name;
     $htmlContent = 
-    '<table cellpadding="0" cellspacing="0" align="center" width="100%">
+    '<table cellpadding="0" cellspacing="0" align="center" width="50%">
     <tr>
-      <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"></a></td>
+      <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"><img
+      src='/email-icon.gif' /></a></td>
     </tr>
     <tr>
       <td align="center"
-        style="background:#9acb51;color:#ffffff; font-size:18px; text-transform:capitalize; font-family:sans-serif; font-weight:bold; padding:10px;">
-        You got an email from Alfa Forex!
+        style="background:#9acb51;color:#ffffff; font-size:18px; font-family:sans-serif; font-weight:bold; padding:10px;">
+        You Got an Email From Alfa Forex!
       </td>
     </tr>
     <tr>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td align="center" style="color:#000000; font-weight:bold; font-size:20px;">Hey, wake up!</td>
-    </tr>
-    <tr>
-      <td align="center" style="color:#000000; font-size:18px;">You got a new lead from Alfa Forex!!</td>
+      <td align="center" style="color:yellowgreen; font-weight:bold; font-size:20px;">Hey, Wake Up!</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -73,9 +71,19 @@ if($_POST['Submit']){
               style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
               '.$message.'</td>
           </tr>
-
         </table>
-
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center"
+        style="background:#6d6d6d; color:#ffffff; font-size:14px; font-family:sans-serif; padding:10px;">
+        <p>Copyright &copy; 2021 All Rights Reserved by Alfa Forex</p>
+        <p>Developed by <a style="background-color: transparent;
+          text-decoration: none; color:yellowgreen" href="https://wa.me/message/QVL2AVPWRIXDE1" target="blank">Zee
+            Ark</a></p>
       </td>
     </tr>
   </table>';
@@ -89,10 +97,10 @@ if($_POST['Submit']){
     
     // Send email
     if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-        header('Location: http://www.alfaforexofficial.com/?response=0');
+        header('Location: http://www.alfaforexofficial.com/#contactus?response=0');
         die;
     }else{
-        header('Location: http://www.alfaforexofficial.com/?response=1');
+        header('Location: http://www.alfaforexofficial.com/#contactus?response=1');
         die;
     }
 }

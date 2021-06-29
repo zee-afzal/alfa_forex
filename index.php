@@ -68,7 +68,7 @@
   <header class="">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="http://www.alfaforexofficial.com/">
           <h2 translate="no">Alfa Forex</h2>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -393,7 +393,7 @@
             </form>
             <?php if(isset($_GET['response'])){ ?>
             <p class="statusMsg <?php echo $_GET['response'] == 0 ? 'success' : 'error' ?>">
-              <?php if($_GET['response'] == 0){ echo "Request Submitted Successfully"; }else { echo "Error: Try Again"; } ?>
+              <?php if($_GET['response'] == 0){ echo "Request Submitted Successfully!"; }else { echo "Error: Try Again!"; } ?>
             </p>
             <?php } ?>
           </div>

@@ -1605,12 +1605,6 @@ footer ul.menu-list li a:hover {
 
 p.statusMsg {
   font-size: 18px;
-}
-
-p.succdiv {
-  color: #008000;
-}
-
-p.errordiv {
-  color: #E80000;
+  color: #fff;
+  margin-top: 10px;
 }
