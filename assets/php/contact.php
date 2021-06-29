@@ -10,16 +10,10 @@ if($_POST['Submit']){
     // Recipient email
     $toEmail = 'umertaj123@gmail.com';
     $emailSubject = 'Contact Request at Alfa Forex by '.$name;
-    // $htmlContent = '<h2>Contact Request Submitted at Alfa Forex</h2>
-    // <p>Name: '.$name.'</p>
-    // <p>Email: '.$email.'</p>
-    // <p>Subject: '.$subject.'</p>
-    // <p>Message:: '.$message.'</p>';
-
-    <table cellpadding="0" cellspacing="0" align="center" width="100%">
+    $htmlContent = 
+    '<table cellpadding="0" cellspacing="0" align="center" width="100%">
     <tr>
-      <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"><img
-            src='./email-icon.gif' /></a></td>
+      <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"></a></td>
     </tr>
     <tr>
       <td align="center"
@@ -50,7 +44,7 @@ if($_POST['Submit']){
               Name</td>
             <td
               style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
-              .$name.</td>
+              '.$name.'</td>
           </tr>
 
           <tr>
@@ -59,7 +53,7 @@ if($_POST['Submit']){
               Email</td>
             <td
               style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
-              .$email.</td>
+              '.$email.'</td>
           </tr>
 
           <tr>
@@ -68,7 +62,7 @@ if($_POST['Submit']){
               Subject</td>
             <td
               style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
-              .$subject.</td>
+              '.$subject.'</td>
           </tr>
 
           <tr>
@@ -77,16 +71,15 @@ if($_POST['Submit']){
               Message</td>
             <td
               style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
-              .$message.</td>
+              '.$message.'</td>
           </tr>
 
         </table>
 
       </td>
     </tr>
-  </>
+  </table>';
 
-    
     // Set content-type header for sending HTML email
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -96,10 +89,10 @@ if($_POST['Submit']){
     
     // Send email
     if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-        header('Location: http://www.alfaforexofficial.com/#contactus?response=0');
+        header('Location: http://www.alfaforexofficial.com/?response=0');
         die;
     }else{
-        header('Location: http://www.alfaforexofficial.com/#contactus?response=1');
+        header('Location: http://www.alfaforexofficial.com/?response=1');
         die;
     }
 }

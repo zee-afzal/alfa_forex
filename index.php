@@ -220,7 +220,8 @@
               <li class="list-group-item">Minimum investment: 200$</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-btn">SignUp</a>
+              <a target="blank" href="https://go.vantagefx.com/visit/?bta=42786&brand=vantagefx"
+                class="card-btn">SignUp</a>
             </div>
           </div>
         </div>
