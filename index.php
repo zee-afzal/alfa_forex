@@ -9,6 +9,7 @@
   <meta name="description" content="Alfa Forex give educational information to help traders learn how to become successful traders by introducing them to the world of Forex trading. We're also a trading community that helps each other out on our everyday
   trading journey to get good returns.">
   <meta name="author" content="Saadullah">
+  <link rel="icon" type="image/png" href="/assets/images/alfa.png" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
     rel="stylesheet">
 
@@ -174,7 +175,7 @@
               <li class="list-group-item">Minimum investment: 100$</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="filled-button">SignUp</a>
+              <a href="#" class="card-btn">SignUp</a>
             </div>
           </div>
           <div class="card border-light">
@@ -189,7 +190,7 @@
               <li class="list-group-item">Minimum investment: 200$</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="filled-button">SignUp</a>
+              <a href="#" class="card-btn">SignUp</a>
             </div>
           </div>
           <div class="card border-light">
@@ -204,7 +205,22 @@
               <li class="list-group-item">Minimum investment: 200$</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="filled-button">SignUp</a>
+              <a href="#" class="card-btn">SignUp</a>
+            </div>
+          </div>
+          <div class="card border-light">
+            <img src="assets/images/vantage1.png" class="card-img-top" width="200" height="80" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vantage FX</h5>
+              <p class="card-text">Since 2009, VANTAGEFX have been delivering a great environment for their clients and
+                also surpassing the expectations held by global financial regulators.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Live spread: 1.0</li>
+              <li class="list-group-item">Minimum investment: 200$</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-btn">SignUp</a>
             </div>
           </div>
         </div>
@@ -376,7 +392,8 @@
             </form>
             <?php if(isset($_GET['response'])){ ?>
             <p class="statusMsg <?php echo $_GET['response'] == 0 ? 'success' : 'error' ?>">
-            <?php if($_GET['response'] == 0){ echo "Success"; }else { echo "Error"; } ?></p>
+              <?php if($_GET['response'] == 0){ echo "Request Submitted Successfully"; }else { echo "Error: Try Again"; } ?>
+            </p>
             <?php } ?>
           </div>
         </div>
@@ -385,6 +402,17 @@
   </div>
 
   <!-- Modals End Here -->
+  <div class="sub-footer1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 style="color: #fff;">DISCLAIMER</h2>
+          <p style="font-size: 18px;">Risk Disclaimer: Trading in financial instruments and/or cryptocurrencies involves
+            high risks including the risk of losing some, or all of your capital.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="container">
       <div class="row">
