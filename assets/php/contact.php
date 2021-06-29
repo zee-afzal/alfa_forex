@@ -97,10 +97,10 @@ if($_POST['Submit']){
     
     // Send email
     if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-        header('Location: http://www.alfaforexofficial.com/#contactus?response=0');
+        header('Location: http://www.alfaforexofficial.com/#contactus/?response=0');
         die;
     }else{
-        header('Location: http://www.alfaforexofficial.com/#contactus?response=1');
+        header('Location: http://www.alfaforexofficial.com/#contactus/?response=1');
         die;
     }
 }
