@@ -13,10 +13,6 @@ if($_POST['Submit']){
     $htmlContent = 
     '<table cellpadding="0" cellspacing="0" align="center" width="50%">
     <tr>
-      <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"><img
-      src="email-icon.gif"/></a></td>
-    </tr>
-    <tr>
       <td align="center"
         style="background:#9acb51;color:#ffffff; font-size:18px; font-family:sans-serif; font-weight:bold; padding:10px;">
         You Got an Email From Alfa Forex!
