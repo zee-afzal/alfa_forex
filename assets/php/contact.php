@@ -14,7 +14,7 @@ if($_POST['Submit']){
     '<table cellpadding="0" cellspacing="0" align="center" width="50%">
     <tr>
       <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"><img
-      src="./email-icon.gif"/></a></td>
+      src="email-icon.gif"/></a></td>
     </tr>
     <tr>
       <td align="center"
@@ -38,37 +38,37 @@ if($_POST['Submit']){
 
           <tr>
             <td width="20%"
-              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">
+              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 15px">
               Name</td>
             <td
-              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
+              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 15px;">
               '.$name.'</td>
           </tr>
 
           <tr>
             <td width="20%"
-              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">
+              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 15px">
               Email</td>
             <td
-              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
+              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 15px;">
               '.$email.'</td>
           </tr>
 
           <tr>
             <td width="20%"
-              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">
+              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 15px">
               Subject</td>
             <td
-              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
+              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 15px;">
               '.$subject.'</td>
           </tr>
 
           <tr>
             <td width="20%"
-              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">
+              style="color:#999999; font-size:16px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 15px">
               Message</td>
             <td
-              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;">
+              style="color:#555555; font-size:16px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 15px;">
               '.$message.'</td>
           </tr>
         </table>
@@ -97,10 +97,10 @@ if($_POST['Submit']){
     
     // Send email
     if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-      header('Location: http://www.alfaforexofficial.com/?response=0');
+      header('Location: http://www.alfaforexofficial.com/?response=0#contactus');
       die;
     }else{
-      header('Location: http://www.alfaforexofficial.com/?response=1');
+      header('Location: http://www.alfaforexofficial.com/?response=1#contactus');
       die;
   }
 }
