@@ -8,8 +8,8 @@ if($_POST['Submit']){
     $subject = $_POST['subject'];
     $message = $_POST['message'];
     // Recipient email
-    $toEmail = 'umertaj123@gmail.com';
-    $emailSubject = 'Contact Request at Alfa Forex by '.$name;
+    $toEmail = 'zee.afzal20@gmail.com';
+    $emailSubject = 'Contact Request at Alfa Forex';
     $htmlContent = 
     '<table cellpadding="0" cellspacing="0" align="center" width="50%">
     <tr>
