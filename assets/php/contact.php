@@ -8,13 +8,13 @@ if($_POST['Submit']){
     $subject = $_POST['subject'];
     $message = $_POST['message'];
     // Recipient email
-    $toEmail = 'zee.afzal20@gmail.com';
+    $toEmail = 'alfaforexofficial@gmail.com';
     $emailSubject = 'Contact Request at Alfa Forex';
     $htmlContent = 
     '<table cellpadding="0" cellspacing="0" align="center" width="50%">
     <tr>
       <td align="center"
-        style="background:#9acb51;color:#ffffff; font-size:18px; font-family:sans-serif; font-weight:bold; padding:10px;">
+        style="background:yellowgreen ;color:#ffffff; font-size:18px; font-family:sans-serif; font-weight:bold; padding:10px;">
         You Got an Email From Alfa Forex!
       </td>
     </tr>
@@ -93,10 +93,10 @@ if($_POST['Submit']){
     
     // Send email
     if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-      header('Location: http://www.alfaforexofficial.com/?response=0#contactus');
+      header('Location: https://www.alfaforexofficial.com/?response=0#contactus');
       die;
     }else{
-      header('Location: http://www.alfaforexofficial.com/?response=1#contactus');
+      header('Location: https://www.alfaforexofficial.com/?response=1#contactus');
       die;
   }
 }

@@ -25,8 +25,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -68,7 +66,7 @@
   <header class="">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="http://www.alfaforexofficial.com/">
+        <a class="navbar-brand" href="https://www.alfaforexofficial.com/">
           <h2 translate="no">Alfa Forex</h2>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -720,7 +718,7 @@
 
 
   <!-- Bootstrap core JavaScript -->
-  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
