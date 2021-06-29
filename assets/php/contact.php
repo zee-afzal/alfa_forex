@@ -14,7 +14,7 @@ if($_POST['Submit']){
     '<table cellpadding="0" cellspacing="0" align="center" width="50%">
     <tr>
       <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"><img
-      src="/email-icon.gif"/></a></td>
+      src="./email-icon.gif"/></a></td>
     </tr>
     <tr>
       <td align="center"
@@ -79,7 +79,7 @@ if($_POST['Submit']){
     </tr>
     <tr>
       <td align="center"
-        style="background:#6d6d6d; color:#ffffff; font-size:14px; font-family:sans-serif; padding:10px;">
+        style="background:#343434; color:#ffffff; font-size:14px; font-family:sans-serif; padding:10px;">
         <p>Copyright &copy; 2021 All Rights Reserved by Alfa Forex</p>
         <p>Developed by <a style="background-color: transparent;
           text-decoration: none; color:yellowgreen" href="https://wa.me/message/QVL2AVPWRIXDE1" target="blank">Zee

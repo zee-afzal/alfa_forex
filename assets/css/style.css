@@ -1603,7 +1603,7 @@ footer ul.menu-list li a:hover {
   content: "\2715"
 }
 
-p.statusMsg {
+.statusMsg {
   font-size: 18px;
   color: #fff;
   margin-top: 10px;
