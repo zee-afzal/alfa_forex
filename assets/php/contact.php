@@ -14,7 +14,7 @@ if($_POST['Submit']){
     '<table cellpadding="0" cellspacing="0" align="center" width="50%">
     <tr>
       <td height="110" align="center" valign="top"><a href="https://www.alfaforexofficial.com"><img
-      src='/email-icon.gif' /></a></td>
+      src="/email-icon.gif"/></a></td>
     </tr>
     <tr>
       <td align="center"
@@ -97,11 +97,11 @@ if($_POST['Submit']){
     
     // Send email
     if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-        header('Location: http://www.alfaforexofficial.com/#contactus/?response=0');
-        die;
+      header('Location: http://www.alfaforexofficial.com/?response=0');
+      die;
     }else{
-        header('Location: http://www.alfaforexofficial.com/#contactus/?response=1');
-        die;
-    }
+      header('Location: http://www.alfaforexofficial.com/?response=1');
+      die;
+  }
 }
 ?>

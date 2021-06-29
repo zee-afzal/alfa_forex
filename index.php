@@ -393,7 +393,7 @@
             </form>
             <?php if(isset($_GET['response'])){ ?>
             <p class="statusMsg <?php echo $_GET['response'] == 0 ? 'success' : 'error' ?>">
-              <?php if($_GET['response'] == 0){ echo "Request Submitted Successfully!"; }else { echo "Error: Try Again!"; } ?>
+              <?php if($_GET['response'] == 0){ echo "Request Submitted Successfully"; }else { echo "Error: Try Again"; } ?>
             </p>
             <?php } ?>
           </div>
