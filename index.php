@@ -188,7 +188,7 @@
               <li class="list-group-item">Minimum investment: 200$</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-btn">SignUp</a>
+              <a target="blank" href="https://track.fxgiants.com/visit/?bta=37334&nci=6329" class="card-btn">SignUp</a>
             </div>
           </div>
           <div class="card border-light">
@@ -467,7 +467,7 @@
       <div class="row">
         <div class="col-md-12">
           <p>Copyright &copy; 2021 All Rights Reserved</p>
-          <p>Developed by <a href="https://wa.me/message/QVL2AVPWRIXDE1" target="blank"> <em> Zee Ark </em> </a></p>
+          <p>Developed by <a href="https://wa.me/message/QVL2AVPWRIXDE1" target="blank"> <em class = "zee"> Zee Ark </em> </a></p>
         </div>
       </div>
     </div>
